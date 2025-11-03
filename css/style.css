@@ -78,6 +78,13 @@ header p {
   margin-top: 10px;
 }
 
+#projects h2 {
+  width: 100%;
+  text-align: center;
+  color: #4B5043;
+  margin-bottom: 20px;
+}
+
 /* === REVIEWS === */
 #reviews {
   background-color: #8DDBE0;
@@ -125,12 +132,15 @@ footer {
 @media (min-width: 700px) {
   #projects {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 20px; /* adds consistent spacing between boxes */
   }
 
   .project {
-    width: 30%;
+    flex: 1 1 300px; /* flexible width that shrinks/grows evenly */
+    max-width: 400px; /* keeps them from getting too huge */
   }
 
   #hero img {

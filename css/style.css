@@ -1,0 +1,140 @@
+/* === GLOBAL STYLES === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #D3FFE9; /* pale mint background */
+  color: #090909; /* near-black text for contrast */
+  line-height: 1.6;
+}
+
+/* === HEADER === */
+header {
+  background-color: #4B5043; /* dark olive gray */
+  color: #D3FFE9;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header p {
+  color: #8DDBE0; /* aqua accent text */
+}
+
+/* === HERO SECTION === */
+#hero {
+  background-color: #9BC4BC; /* muted teal background behind hero image */
+  padding: 20px;
+}
+
+#hero img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(9, 9, 9, 0.3);
+}
+
+/* === ABOUT === */
+#about {
+  background-color: #D3FFE9; /* light mint */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+  border: 3px solid #8DDBE0;
+}
+
+/* === PROJECTS / PROGRAMS === */
+#projects {
+  background-color: #9BC4BC;
+  padding: 40px 20px;
+}
+
+.project {
+  background-color: #D3FFE9;
+  border: 2px solid #8DDBE0;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 400px;
+}
+
+.project h3 {
+  color: #4B5043;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* === REVIEWS === */
+#reviews {
+  background-color: #8DDBE0;
+  color: #090909;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#reviews p {
+  background-color: #D3FFE9;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* === CONTACT === */
+#contact {
+  background-color: #4B5043;
+  color: #D3FFE9;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#contact a {
+  color: #8DDBE0;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #D3FFE9;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #090909;
+  color: #D3FFE9;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* === RESPONSIVE === */
+@media (min-width: 700px) {
+  #projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 30%;
+  }
+
+  #hero img {
+    max-width: 900px;
+  }
+}
